@@ -1,0 +1,459 @@
+/* 
+========================================================================================
+                        Start Root
+========================================================================================
+*/
+:root {
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffae00;
+    --grey-color:#ecf0f2;
+}
+/* 
+========================================================================================
+                        End Root
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start body
+========================================================================================
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* 
+========================================================================================
+                        End Body
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Components
+========================================================================================
+*/
+.main-btn{
+    width: 105px;
+    background-color: var(--red-color);
+    transition: all .4s ease-in-out;
+}
+.main-btn a{
+    color: var(--yellow-color);
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.main-btn:focus,
+.main-btn:hover{
+    background-color: var(--green-color);
+}
+.main-btn:focus a,
+.main-btn:hover a{
+    color: white;
+}
+.main-title::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 
+========================================================================================
+                        End Components
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start NaVBar
+========================================================================================
+*/
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link .active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .search {
+    border-left: 1px solid var(--green-color) ;
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .container .navbar-toggler{
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+.navbar .container .navbar-toggler:focus{
+    box-shadow:none;
+}
+.navbar .container .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+.navbar .main-btn:focus,
+.navbar .main-btn:hover{
+    background-color: var(--green-color);
+}
+/* 
+========================================================================================
+                        End NaVBar
+======================================================================================== 
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Landing
+========================================================================================
+*/
+.landing{
+    background-color: var(--dark-color);
+    min-height: 100vh ;
+}
+.landing .text-center h1{
+    font-weight: 300;
+}
+.landing .main-btn{
+    width: 140px;
+    height: 60px;
+}
+/* 
+========================================================================================
+                        End Landing
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Features
+========================================================================================
+*/
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--grey-color) ;
+}
+.features .icon-holder .icon-pencil {
+    color: var(--green-color) ;
+}
+.features .feat h4{
+    color: var(--yellow-color);
+}
+/* 
+========================================================================================
+                        End Features
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Our Work Section 
+========================================================================================
+*/
+.our-work{
+    background-color: rgb(242, 242, 242);
+}
+
+.our-work ul li .active,
+.our-work ul li:focus,
+.our-work ul li:hover
+{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.our-work ul li {
+    width: 6rem;
+    margin: 1rem .3rem;
+    padding: .6rem .5rem;
+    transition: all .3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 17px;
+}
+.our-work .boxes{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+} 
+.our-work .boxes::before{
+    content: attr(data-work);
+    width: calc( 100% - 10px );
+    background-color: #33d1cca0;
+    height: calc(100% - 10px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bolder;
+    font-size: 30px;
+    color: white;
+    transition: .4s;
+    transform: translateY(calc( 100% + 10px ));
+}
+.our-work .boxes:hover::before{
+    transform: translateY( 0 );
+}
+.our-work-btn button {
+    padding: 1.3rem;
+    width: 11rem;
+}
+/* 
+========================================================================================
+                        End Our Work Section 
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Stuff
+========================================================================================
+*/
+.stuff .description{
+    max-width: 750px;
+}
+.texte button {
+    width: 160px;
+    padding: 8px;
+}
+/* 
+========================================================================================
+                        End Stuff
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Our Team
+========================================================================================
+*/
+.team{
+    background-color: #ecf0f7;
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+/* 
+========================================================================================
+                        End Our Team
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Projects
+========================================================================================
+*/
+.Project{
+    background-color: var(--dark-color);
+}
+.Project button{
+    width: 199px;
+    height: 50px;
+}
+/* 
+========================================================================================
+                        End Projects
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Blog
+========================================================================================
+*/
+.blog .container .row .card{
+    border: none;
+}
+.blog .container button{
+    width: 199px;
+    height: 50px;
+}
+/* 
+========================================================================================
+                        End Blog
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start SubScribe
+========================================================================================
+*/
+.subs{
+    background-color: var(--yellow-color);
+}
+.subs input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subs input[type="text"]:focus{
+    outline: none;
+}
+.subs input::placeholder{
+    color: white;
+}
+.subs input[type="submit"] {
+    color: var(--yellow-color);
+    background-color: #19283f;
+}
+/* 
+========================================================================================
+                        End SubScribe
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Footer
+========================================================================================
+*/
+.footer{
+    background-color: var(--dark-color);
+}
+/* 
+========================================================================================
+                        End Footer
+========================================================================================
+*/
+
+
+.footer .copyright > span {
+    color: var(--green-color);
+}
+
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .contact ul svg {
+    width: 30px;
+    height: 30px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linked{
+    background-color: #0a66c2 ;
+}
+.footer .youtube{
+    background-color: #ff0000;
+}
